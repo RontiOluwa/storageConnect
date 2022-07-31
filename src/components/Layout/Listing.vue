@@ -22,12 +22,13 @@ import { defineComponent } from "vue";
 import Title from "../Base/Title.vue";
 import Card from "../Base/Cards/Property.vue";
 import Button from "../Base/Button.vue";
+import Property from "../../types/Property";
 
 export default defineComponent({
   name: "Home",
   components: { Title, Card, Button },
   setup() {
-    const Listing = [
+    const Listing: Property[] = [
       {
         title: "Heading of this Self Storage",
         image: "./img/s1.png",

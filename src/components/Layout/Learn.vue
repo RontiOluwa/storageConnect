@@ -22,12 +22,13 @@ import { defineComponent } from "vue";
 import Title from "../Base/Title.vue";
 import Card from "../Base/Cards/Learn.vue";
 import Button from "../Base/Button.vue";
+import Learn from "../../types/Learn";
 
 export default defineComponent({
   name: "Home",
   components: { Title, Card, Button },
   setup() {
-    const Listing = [
+    const Listing: Learn[] = [
       {
         title: "Everything you need to know about how to buy a Self Storage",
         time: "5hrs ago",

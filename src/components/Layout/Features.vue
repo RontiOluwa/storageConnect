@@ -24,12 +24,13 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination } from "vue3-carousel";
 import Title from "../Base/Title.vue";
 import Card from "../Base/Cards/Property.vue";
+import Property from "../../types/Property";
 
 export default defineComponent({
   name: "Home",
   components: { Title, Card, Carousel, Slide, Pagination },
   setup() {
-    const Listing = [
+    const Listing: Property[] = [
       {
         title: "Heading of this Self Storage",
         image: "./img/s1.png",
